@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>photo-editor</title>
+    <title>photo editor</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="d-flex justify-content-around">
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Photo editor</span>
+      </nav>
+    <div class="d-flex justify-content-around buttons">
         <div><div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-secondary active">
               <input type="radio" name="options" id="option1" checked> first photo
@@ -37,6 +40,12 @@
             </select>
         </div>
         <div><button type="button" class="btn btn-outline-danger">reset</button></div>
+    </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6"><img src="./img/guitarist.jpg" alt=""></div>
+        <div class="col-md-6"><img src="./img/road.jpg" alt=""></div>
+        </div>
     </div>
     <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
