@@ -16,21 +16,21 @@
       </nav>
     <div class="d-flex justify-content-around buttons">
         <div><div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
+            <label class="btn btn-secondary first-photo">
               <input type="radio" name="options" id="option1" checked> first photo
             </label>
-            <label class="btn btn-secondary">
+            <label class="btn btn-secondary second-photo">
               <input type="radio" name="options" id="option2"> second photo
             </label>
           </div></div>
-        <div><button type="button" class="btn btn-secondary">black&white</button></div>
-        <div><button type="button" class="btn btn-secondary">border radius</button></div>
-        <div><button type="button" class="btn btn-secondary">opacity</button></div>
+        <div><button type="button" class="btn btn-secondary black-white">black&white</button></div>
+        <div><button type="button" class="btn btn-secondary border-radius">border radius</button></div>
+        <div><button type="button" class="btn btn-secondary opacity">opacity</button></div>
         <div><select class="custom-select">
                 <option selected>size</option>
-                <option value="1">+10px</option>
-                <option value="2">+20px</option>
-                <option value="3">+30px</option>
+                <option value="1" class = "ten-larger">+10px</option>
+                <option value="2" class = "twenty-larger">+20px</option>
+                <option value="3" class = "thirty-larger">+30px</option>
             </select>
         </div>
         <div><select class="custom-select">
@@ -39,12 +39,11 @@
                 <option value="2">skinny</option>
             </select>
         </div>
-        <div><button type="button" class="btn btn-outline-danger">reset</button></div>
+        <div><button type="button" class="btn btn-outline-danger reset">reset</button></div>
     </div>
     <div class="container">
         <div class="row">
-        <div class="col-md-6"><img src="./img/guitarist.jpg" alt=""></div>
-        <div class="col-md-6"><img src="./img/road.jpg" alt=""></div>
+        <div class="col-md-6"><img class = "guitarist-img" src="./img/guitarist.jpg" alt=""></div>
         </div>
     </div>
     <script src="./script.js"></script>
