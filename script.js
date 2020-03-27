@@ -23,3 +23,6 @@ let imgOpacity = event => {
 };
 opacityButton.addEventListener('click', imgOpacity)
 
+let resetButton = document.querySelector('.reset')
+let resetFunc = event => {guitaristImg.style.removeProperty('filter'); guitaristImg.style.removeProperty('opacity'); guitaristImg.style.removeProperty('border-radius')};
+resetButton.addEventListener('click', resetFunc)
