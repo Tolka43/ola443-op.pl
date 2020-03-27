@@ -3,11 +3,15 @@ body {
     background-color: rgb(240, 240, 240);
 }
 .container{
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.mb-3 {
+    margin-top: 10px;
 }
 
 .buttons {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
  .col-md-6 { 
