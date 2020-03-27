@@ -1,7 +1,12 @@
 const guitaristImg = document.querySelector('.guitarist-img')
 
 let blackWhiteButton = document.querySelector('.black-white')
-let blackWhiteImg = event => guitaristImg.style.filter = 'grayscale(100%)';
+
+let blackWhiteImg = event => {
+    if (guitaristImg.style.filter !== 'greyscale(100%)') { guitaristImg.style.filter = 'greyscale(100%)' }
+    else { guitaristImg.style.filter = 'none' }
+}
+
 blackWhiteButton.addEventListener('click', blackWhiteImg)
 
 let borderRadiusButton = document.querySelector('.border-radius')
