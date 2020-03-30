@@ -26,3 +26,10 @@ opacityButton.addEventListener('click', imgOpacity)
 let resetButton = document.querySelector('.reset')
 let resetFunc = event => {guitaristImg.style.removeProperty('filter'); guitaristImg.style.removeProperty('opacity'); guitaristImg.style.removeProperty('border-radius')};
 resetButton.addEventListener('click', resetFunc)
+
+const inputFile = document.querySelector('input[type=file]');
+const canvas = document.querySelector('canvas');
+const context = canvas.getContext('2d');
+const img = new Image();
+img.src = URL.createObjectURL(el);
+img.onload = function() { context.drawImage(img, 0, 0, 300, 300); }
