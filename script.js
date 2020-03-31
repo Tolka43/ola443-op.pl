@@ -28,8 +28,29 @@ let resetFunc = event => {guitaristImg.style.removeProperty('filter'); guitarist
 resetButton.addEventListener('click', resetFunc)
 
 const inputFile = document.querySelector('input[type=file]');
-const canvas = document.querySelector('canvas');
-const context = canvas.getContext('2d');
-const img = new Image();
-img.src = URL.createObjectURL(el);
-img.onload = function() { context.drawImage(img, 0, 0, 300, 300); }
+
+function drawImage(file) {
+    const container = document.querySelector('.first-image');
+
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
+
+  const img = new Image();
+  img.src = URL.createObjectURL(file);
+
+  img.addEventListener('load', function() {
+    const ourWidth = 250;
+    const ourHeight = (img.height / img.width) * 250;
+
+    canvas.width = ourWidth;
+    canvas.height = ourHeight;
+
+    context.drawImage(img, 0, 0, ourWidth, ourHeight);
+
+    container.appendChild(canvas);
+  });
+}
+
+inputFile.addEventListener('change', function(event) {
+  drawImage(inputFile.files[0]);
+});
